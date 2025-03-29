@@ -7,5 +7,4 @@ index.md
 markdown-examples.md
 config.mjs
 /.vitepress
-!/your-folder-name/*
-.gitignore
+!/.vitepress/*
