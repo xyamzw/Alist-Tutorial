@@ -2,13 +2,13 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/vitePress-project/',
+  base: './',
   title: "vitepress-alist",
   description: "一个alist教程",
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: 'Home', link: '/vitePress-project'},
+      { text: 'Home', link: '/'},
       { text: 'Examples', link: '/markdown-examples' }
     ],
 
