@@ -1,1 +1,11 @@
 node_modules
+package.json
+package-lock.json
+README.md
+api-examples.md
+index.md
+markdown-examples.md
+config.mjs
+/.vitepress
+!/your-folder-name/*
+.gitignore
