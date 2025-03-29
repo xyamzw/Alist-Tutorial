@@ -2,9 +2,9 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+  base: '/vitePress-project/',
   title: "vitepress-alist",
   description: "一个alist教程",
-  base: '/vitePress-project/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
