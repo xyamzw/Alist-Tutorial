@@ -4,7 +4,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "vitepress-alist",
   description: "一个alist教程",
-  srcDir: '/vitePress-project/',
+  base: '/vitePress-project/',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
