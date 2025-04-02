@@ -1,29 +1,34 @@
 import { defineConfig } from 'vitepress'
-
-// https://vitepress.dev/reference/site-config
+import { nav,sidebar} from './configs'
+import { groupIconMdPlugin, groupIconVitePlugin } from 'vitepress-plugin-group-icons'
 export default defineConfig({
-  base: './',
+  base: '/',
   title: "vitepress-alist",
   description: "一个alist教程",
-  themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
-    nav: [
-      { text: 'Home', link: '/'},
-      { text: 'Examples', link: '/markdown-examples' }
-    ],
+  markdown: {
+    lineNumbers: true,
+    config(md) { 
+      md.use(groupIconMdPlugin)
+    },
+  },
 
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      }
+  vite: { 
+    plugins: [
+      groupIconVitePlugin() 
     ],
+  },
+  themeConfig: {
+    editLink: {
+      pattern: 'https://github.com/xyamzw/Alist-Tutorial/edit/main/docs/:path',
+      text: '在GitHub编辑本页'
+    },
+    // 导航栏
+    nav,
+    // 侧边栏
+    sidebar,
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+      { icon: 'github', link: 'https://github.com/xyamzw/Alist-Tutorial' }
     ]
   }
 })
