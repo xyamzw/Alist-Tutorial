@@ -5,5 +5,19 @@
 
 ## 一键脚本
 
+### Linux
+::: code-group
+```sh [正式版]
+curl -fsSL "https://alist.nn.ci/v3.sh" -o v3.sh && bash v3.sh
+```
+:::
+
+### Windows
+::: code-group
+```sh
+
+```
+:::
+
 
 
