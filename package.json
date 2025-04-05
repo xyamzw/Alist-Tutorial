@@ -1,36 +1,39 @@
 {
-  "name": "alist-tutorial",
-  "version": "1.0.0",
-  "private": "true",
-  "type": "module",
-  "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
-  },
-  "scripts": {
-    "docs:dev": "vitepress dev docs --open --hmr",
-    "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs",
-    "prepare": "husky",
-    "release": "standard-version",
-    "format": "prettier --write src/",
-    "commit:day": "cz"
-  },
-  "devDependencies": {
-    "@commitlint/cli": "^19.8.0",
-    "@commitlint/config-conventional": "^19.8.0",
-    "@types/animejs": "^3.1.13",
-    "animejs": "^3.2.2",
-    "cz-conventional-changelog-zh-cn": "^0.0.7",
-    "husky": "^9.1.7",
-    "prettier": "3.5.3",
-    "standard-version": "^9.5.0",
-    "vitepress": "^1.6.3",
-    "vitepress-plugin-group-icons": "^1.3.8",
-    "vue": "^3.5.13"
-  },
-  "config": {
-    "commitizen": {
-      "path": "./node_modules/cz-conventional-changelog-zh-cn"
-    }
-  }
+	"name": "alist-tutorial",
+	"version": "1.0.0",
+	"private": "true",
+	"type": "module",
+	"engines": {
+		"node": ">=18"
+	},
+	"lint-staged": {
+		"**/*": "prettier --write --ignore-unknown"
+	},
+	"scripts": {
+		"docs:dev": "vitepress dev docs --open --hmr",
+		"docs:build": "vitepress build docs",
+		"docs:preview": "vitepress preview docs",
+		"prepare": "husky",
+		"release": "standard-version",
+		"format": "prettier --write src/",
+		"commit:day": "cz"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^19.8.0",
+		"@commitlint/config-conventional": "^19.8.0",
+		"@types/animejs": "^3.1.13",
+		"animejs": "^3.2.2",
+		"cz-conventional-changelog-zh-cn": "^0.0.7",
+		"husky": "^9.1.7",
+		"prettier": "3.5.3",
+		"standard-version": "^9.5.0",
+		"vitepress": "^1.6.3",
+		"vitepress-plugin-group-icons": "^1.3.8",
+		"vue": "^3.5.13"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog-zh-cn"
+		}
+	}
 }
