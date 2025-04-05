@@ -2,6 +2,7 @@ import DefaultTheme from 'vitepress/theme';
 import Linkcard from './components/Linkcard.vue';
 import HomeUnderline from './components/HomeUnderline.vue';
 import MyLayout from './components/MyLayout.vue';
+import CopyLink from './components/CopyLink.vue';
 import MouseClick from './components/MouseClick.vue';
 import MouseFollower from './components/MouseFollower.vue';
 import {watch, onMounted, nextTick} from 'vue';
@@ -15,6 +16,7 @@ export default {
 		app.component('HomeUnderline', HomeUnderline);
 		app.component('MouseFollower', MouseFollower);
 		app.component('MouseClick', MouseClick);
+		app.component('CopyLink', CopyLink);
 		// 彩虹背景动画样式
 		if (typeof window !== 'undefined') {
 			watch(

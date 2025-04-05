@@ -7,6 +7,9 @@ export const sidebar = [
 	{
 		text: '基础配置',
 		collapsed: false,
-		items: [{text: '安装', link: '/install'}],
+		items: [
+			{text: '安装', link: '/install'},
+			{text: '一键脚本', link: '/script'},
+		],
 	},
 ];
