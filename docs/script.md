@@ -15,13 +15,13 @@ curl -fsSL "https://alist.nn.ci/v3.sh" -o v3.sh && bash v3.sh
 
 接下来我们进行安装alist,输入1即可安装
 这里我提供一个github代理地址进行加速
-<CopyLink text="点击复制链接" link="https://example.com/some/page" />
+<CopyLink text="点击复制链接" link="https://ghfast.top/" />
 ![](./alist_install2.png)
 
 
 ## Windows
 ::: code-group
-```sh
+```bash
 
 ```
 :::
