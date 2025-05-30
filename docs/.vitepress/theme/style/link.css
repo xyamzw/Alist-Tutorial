@@ -1,0 +1,12 @@
+.vp-doc a[href^="https://alist.nn.ci/zh/"]:before
+{
+	content: '';
+	background-image: url(../../public/alist.svg);
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	vertical-align: middle;
+	position: relative;
+	background-size: cover;
+	margin-right: 4px;
+}
